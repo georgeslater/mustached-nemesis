@@ -1,0 +1,14 @@
+extends ./layout.jade
+
+block title
+  title #{title}
+
+block my-content
+  div
+    span Hello Wopld!
+  div
+    case counter
+      when 0
+        p no counter!
+      when 10
+        p counter is #{counter}!
